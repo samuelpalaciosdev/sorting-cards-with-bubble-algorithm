@@ -37,7 +37,6 @@ const generateCardsArray = (numCards) => {
     card.suit = suitsCards[getRandomNum(0, suitsCards.length - 1)];
     card.num = numsCards[getRandomNum(0, numsCards.length - 1)];
     cardsArr.push(card);
-    console.log(card);
   }
   return cardsArr;
 };
@@ -107,7 +106,6 @@ btnDraw.addEventListener('click', () => {
 });
 
 btnSort.addEventListener('click', () => {
-  console.log('hey whatsup its me');
   clearSortedContainer();
   bubbleSort(cardsArr);
 });
